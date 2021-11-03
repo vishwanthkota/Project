@@ -1,0 +1,337 @@
+<!-- <div style="border: 2px solid black;" class="m-3">
+    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="nav-link active m-3 p-3 text-center" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Dashboard</a>
+        <a class="nav-link m-3 p-3 text-center" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Manage Patient Records</a>
+        <a class="nav-link m-3 p-3 text-center" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Manage Physician Records</a>
+        <a class="nav-link m-3 p-3 text-center" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Manage Appointments</a>
+        <a class="nav-link m-3 p-3 text-center" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Billing</a>
+
+    </div>
+    </div> -->
+
+
+    <!-- <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+                <strong>BS</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul>
+        </nav>
+
+    
+    </div> -->
+
+
+
+        <nav class="navbar navbar-expand-lg fixed-top shadow navbar-dark navbar-offcanvas" style="background-color: blue;">
+           
+
+
+            <button class="navbar-toggler d-block" type="button"  (click)="toggleClick()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div [class]="sideToggle ? 'navbar-collapse offcanvas-collapse open' :  'navbar-collapse offcanvas-collapse'">
+                <ul class="navbar-nav mr-auto" style="padding-top: 20px;">
+                    <li class="nav-item active ">
+                        <a  href="javascript:void(0)">Dashboard <span class="sr-only">(current)</span></a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Manage Patient Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)">Manage Physician Records</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="javascript:void(0)" >Manage Appointments</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="javascript:void(0)">Billing</a>
+                  </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Settings</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="javascript:void(0)">Action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Another action</a>
+                            <a class="dropdown-item" href="javascript:void(0)">Something else here</a>
+                        </div>
+                    </li> -->
+                </ul>
+    
+    
+            </div>
+        </nav>
+    
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<div class="page-wrapper chiller-theme">
+    <div class="page-wrapper chiller-theme toggled">
+        <a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+          <i class="fas fa-bars"></i>
+        </a>
+        <nav id="sidebar" class="sidebar-wrapper">
+          <div class="sidebar-content">
+            <div class="sidebar-brand">
+              <a href="#">pro sidebar</a>
+              <div id="close-sidebar">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+            <div class="sidebar-header">
+              <div class="user-pic">
+                <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+                  alt="User picture">
+              </div>
+              <div class="user-info">
+                <span class="user-name">Jhon
+                  <strong>Smith</strong>
+                </span>
+                <span class="user-role">Administrator</span>
+                <span class="user-status">
+                  <i class="fa fa-circle"></i>
+                  <span>Online</span>
+                </span>
+              </div>
+            </div>
+           
+            <div class="sidebar-search">
+              <div>
+                <div class="input-group">
+                  <input type="text" class="form-control search-menu" placeholder="Search...">
+                  <div class="input-group-append">
+                    <span class="input-group-text">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <div class="sidebar-menu">
+              <ul>
+                <li class="header-menu">
+                  <span>General</span>
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                    <span class="badge badge-pill badge-warning">New</span>
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="#">Dashboard 1
+                          <span class="badge badge-pill badge-success">Pro</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Dashboard 2</a>
+                      </li>
+                      <li>
+                        <a href="#">Dashboard 3</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-shopping-cart"></i>
+                    <span>E-commerce</span>
+                    <span class="badge badge-pill badge-danger">3</span>
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="#">Products
+      
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">Orders</a>
+                      </li>
+                      <li>
+                        <a href="#">Credit cart</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="far fa-gem"></i>
+                    <span>Components</span>
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="#">General</a>
+                      </li>
+                      <li>
+                        <a href="#">Panels</a>
+                      </li>
+                      <li>
+                        <a href="#">Tables</a>
+                      </li>
+                      <li>
+                        <a href="#">Icons</a>
+                      </li>
+                      <li>
+                        <a href="#">Forms</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-chart-line"></i>
+                    <span>Charts</span>
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="#">Pie chart</a>
+                      </li>
+                      <li>
+                        <a href="#">Line chart</a>
+                      </li>
+                      <li>
+                        <a href="#">Bar chart</a>
+                      </li>
+                      <li>
+                        <a href="#">Histogram</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="sidebar-dropdown">
+                  <a href="#">
+                    <i class="fa fa-globe"></i>
+                    <span>Maps</span>
+                  </a>
+                  <div class="sidebar-submenu">
+                    <ul>
+                      <li>
+                        <a href="#">Google maps</a>
+                      </li>
+                      <li>
+                        <a href="#">Open street map</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="header-menu">
+                  <span>Extra</span>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-book"></i>
+                    <span>Documentation</span>
+                    <span class="badge badge-pill badge-primary">Beta</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-calendar"></i>
+                    <span>Calendar</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-folder"></i>
+                    <span>Examples</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          
+          </div>
+         
+        </nav>
+  
+      
+      </div>
+</div> -->
+
+
+
+  
+    
+
